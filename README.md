@@ -34,13 +34,16 @@ No hay servidor, no hay base de datos y no hay build del frontend.
 Abre `index.html`. Funciona igual con `file://` que publicado, así que puedes probarlo con doble
 clic antes de subirlo.
 
-### Publicar en GitHub Pages
+### Publicado
 
-1. Sube el repo a GitHub.
-2. **Settings → Pages → Source: Deploy from a branch**, rama `main`, carpeta `/ (root)`.
-3. Queda en `https://<usuario>.github.io/<repo>/`.
+- **Producción:** https://lato-qa-checklist.vercel.app
+- Vercel está conectado a este repo: cada push a `main` redespliega solo. No hay paso de build,
+  la configuración está en `vercel.json`.
 
-No hay paso de build: lo que está en el repo es lo que se sirve.
+### Alternativa: GitHub Pages
+
+**Settings → Pages → Deploy from a branch**, rama `main`, carpeta `/ (root)`. Queda en
+`https://<usuario>.github.io/<repo>/`.
 
 ---
 
@@ -65,6 +68,7 @@ No hay paso de build: lo que está en el repo es lo que se sirve.
 │   └── build_xlsx.py           checklist.json  →  la plantilla en Excel
 ├── downloads/
 │   └── QA_Checklist_LATO.xlsx  GENERADO — plantilla en blanco
+├── vercel.json                 Configuración del despliegue estático
 └── docs/
     └── QA_CHECKLIST_LATO.md    FUENTE — las reglas propias de cada documento
 ```

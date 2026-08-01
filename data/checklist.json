@@ -1,0 +1,2070 @@
+{
+  "version": "1.0",
+  "contenido": "Checklist V1",
+  "unicos": 151,
+  "documentos": [
+    {
+      "id": "workflow",
+      "tabla": "1",
+      "corto": "Workflow",
+      "titulo": "Workflow / Arquitectura",
+      "resumen": "El diagrama en LATO Architect y su PDF exportado.",
+      "cuando": "Antes de darle «approve architecture» y antes de que exista cualquier proposal.",
+      "bloques": [
+        {
+          "id": "transversales",
+          "titulo": "Transversales",
+          "subtitulo": "aplican a todos los entregables",
+          "tipo": "transversal",
+          "items": [
+            {
+              "id": "T.1",
+              "categoria": "Nombres",
+              "critico": true,
+              "texto": "Cero nombres de personas, en cualquier documento: ni del cliente, ni de LATO, ni de terceros. Y cero nombres de los clientes finales o grupos del cliente. Escribir \"el encargado de X\".",
+              "fuente": "Giovanni's 28 jul (\"esto lo hemos hablado mil veces\"), Green Climate, Allegeant, Health Clinic"
+            },
+            {
+              "id": "T.2",
+              "categoria": "Nombres",
+              "critico": true,
+              "texto": "Nombres propios verificados, nunca copiados tal cual de la transcripción: Zelis (no Celis/Zealous), Xplor Pay (no Wordplay), Baily (no Bailey), y los grupos con su nombre completo (no apodos tipo \"Gully\").",
+              "fuente": "Allegeant 20 jul, Hudec 28 jul, Baily 22 jul"
+            },
+            {
+              "id": "T.3",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin guiones largos (—) en la redacción. Solo en palabras compuestas.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "T.4",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin emojis ni símbolos ①②③ dentro de párrafos: listas numeradas 1) 2) 3).",
+              "fuente": "Allegeant 20 jul, punto 4"
+            },
+            {
+              "id": "T.5",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin referencias a grabaciones, transcripts ni reuniones.",
+              "fuente": "Allegeant 23 jul"
+            },
+            {
+              "id": "T.6",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin repeticiones: ni frases duplicadas entre secciones (el generador repite \"Please note: Please note:\"), ni información ya dada repetida en cada paso.",
+              "fuente": "Baily 21 jul; video Health Clinic 16 jul"
+            },
+            {
+              "id": "T.7",
+              "categoria": "Verificación",
+              "critico": true,
+              "texto": "Lo que genera el modelo se revisa punto por punto: inventa ítems, mete temas que no se hablaron (ej. HIPAA) y afirma datos sobre terceros que no son ciertos (límites de plan, capacidades de un sistema). Solo queda lo verificado y lo que salió de la reunión.",
+              "fuente": "Health Clinic 16 jul; video Avonel 22 jun"
+            },
+            {
+              "id": "T.8",
+              "categoria": "Verificación",
+              "critico": true,
+              "texto": "Nada de porcentajes ni estadísticas salvo que estemos 100% seguros de que se dijeron en la reunión. \"Las estadísticas son peligrosas.\"",
+              "fuente": "Video Health Clinic 16 jul"
+            },
+            {
+              "id": "T.9",
+              "categoria": "Cliente",
+              "critico": true,
+              "texto": "Nunca pedirle al cliente algo que ya confirmó en la reunión, que ya nos entregó, o a lo que ya tenemos acceso. Antes de mandar un cuestionario, cruzarlo contra la transcript.",
+              "fuente": "Willoughby 21 jul; Health Clinic 25 jun; video Accuro 3 jul"
+            },
+            {
+              "id": "T.10",
+              "categoria": "Consistencia",
+              "critico": true,
+              "texto": "Todo cambio se propaga en cadena: workflow → proposal → tabla de fees → key capabilities → tabla de systems & connections → timeline.",
+              "fuente": "River Salvage, Shrager, Walnut"
+            },
+            {
+              "id": "T.11",
+              "categoria": "Archivo",
+              "critico": false,
+              "texto": "Antes de avisar \"está listo\", confirmar que el archivo guardó: revisar el timestamp de última edición.",
+              "fuente": "Hudec 28 jul"
+            },
+            {
+              "id": "T.12",
+              "categoria": "Archivo",
+              "critico": false,
+              "texto": "Guardar y nombrar la versión anterior (ej. \"V45 LATOAI ARCHITECT\") antes de rehacer un documento o un workflow.",
+              "fuente": "Shrager 31 jul"
+            },
+            {
+              "id": "T.13",
+              "categoria": "Entrega",
+              "critico": false,
+              "texto": "Entregable en Google Docs, en la carpeta correcta y con permisos de edición, link en Byron's tasks, tracker actualizado. Al compartir, confirmar en qué tab está.",
+              "fuente": "Shrager 24 jul; Allegeant 17 y 23 jul; Avonel 22 jun"
+            },
+            {
+              "id": "T.14",
+              "categoria": "Entrega",
+              "critico": false,
+              "texto": "Numeración consecutiva de workflows coordinada con Dana, y proyecto creado en la plataforma con el código numérico correcto.",
+              "fuente": "Avonel 20 jun; Dana 14 jul"
+            },
+            {
+              "id": "T.15",
+              "categoria": "Idioma",
+              "critico": false,
+              "texto": "Todo lo que puede leer leadership va en inglés: reportes, API research, mensajes.",
+              "fuente": "Green Climate 24 jul"
+            },
+            {
+              "id": "T.16",
+              "categoria": "Comunicación",
+              "critico": false,
+              "texto": "Videos de review: varios cortos o medianos, nunca uno largo.",
+              "fuente": "Health Clinic 30 jul"
+            },
+            {
+              "id": "T.17",
+              "categoria": "Comunicación",
+              "critico": false,
+              "texto": "Todo correo al cliente se lo revisa Dan antes de enviarlo. Y ojo con la zona horaria: EST va una hora adelante de la nuestra.",
+              "fuente": "Health Clinic, notas de voz 3 jul"
+            },
+            {
+              "id": "T.18",
+              "categoria": "Posicionamiento",
+              "critico": false,
+              "texto": "Nunca se admite ante el cliente que los workflows se apoyan en modelos de IA abiertos.",
+              "fuente": "KNOWLEDGE BASE 6 abr"
+            },
+            {
+              "id": "T.19",
+              "categoria": "Alcance",
+              "critico": false,
+              "texto": "No construimos calendar tools desde cero: se usa Calendly o Google Calendar y nos conectamos por API.",
+              "fuente": "KNOWLEDGE BASE 4 may"
+            },
+            {
+              "id": "T.20",
+              "categoria": "Alcance",
+              "critico": false,
+              "texto": "Los happy paths primero: no sobrecomplicar la arquitectura sobre supuestos de una reunión de hora y media.",
+              "fuente": "Training Session 15 abr"
+            },
+            {
+              "id": "T.21",
+              "categoria": "Proceso",
+              "critico": false,
+              "texto": "Si el workflow no está 100% claro, se agenda reunión solo de workflow antes de mandarlo a estimates. No vale la pena pedir pricing de un sistema que quizás no es.",
+              "fuente": "Training Session 15 abr"
+            },
+            {
+              "id": "T.22",
+              "categoria": "Proceso",
+              "critico": false,
+              "texto": "Revisar support@latoai.com varias veces al día; cualquier requerimiento de cliente se le pasa a Alex, y se le confirma al cliente cuando queda resuelto.",
+              "fuente": "Dana 3 jul"
+            }
+          ]
+        },
+        {
+          "id": "criticos",
+          "titulo": "Críticos",
+          "subtitulo": "los que se han devuelto corregidos más de una vez",
+          "tipo": "critico",
+          "items": [
+            {
+              "id": "1.1",
+              "categoria": "Scope",
+              "critico": true,
+              "texto": "Los casos del diagrama son exactamente los del Phase 1 acordado. Nada de casos extra, ni casos de fases futuras, ni procesos que se descartaron.",
+              "fuente": "Pipitone (client onboarding NO va), Walnut (solo voice, el AP no), Shrager (quitar Caso 3), Hudec"
+            },
+            {
+              "id": "1.5",
+              "categoria": "Nomenclatura",
+              "critico": true,
+              "texto": "El sistema escribe \"Phase 1 / Phase 2\". Renombrar manualmente a \"Case 1 / Case 2\". No debe quedar ni una referencia nuestra a \"phase\".",
+              "fuente": "EHR Edge 16 jul; ejemplo correcto: Shrager Defense"
+            },
+            {
+              "id": "1.8",
+              "categoria": "Lógica",
+              "critico": true,
+              "texto": "Cada condicional tiene TODAS sus salidas dibujadas, con flecha y etiqueta. No basta con describirlas en el texto lateral.",
+              "fuente": "QA Accuro issue #01; Hudec 28 jul (el nodo [4A-3] se quedó sin el yes path)"
+            },
+            {
+              "id": "1.15",
+              "categoria": "APIs",
+              "critico": true,
+              "texto": "Cada API listada está verificada contra documentación oficial. Si no hay API pública, el paso se cambia a drag-and-drop / carga manual y se dice explícitamente.",
+              "fuente": "EHR (Cause IQ), Shrager (UJS Portal), Walnut (Quicken), Hudec (Dental Intelligence)"
+            },
+            {
+              "id": "1.19",
+              "categoria": "APIs",
+              "critico": true,
+              "texto": "No ofrecer sistemas que no vamos a usar ni que el cliente necesita. Si ya usan Slack, las notificaciones van por Slack y por la hotlist: no se les mete SendGrid.",
+              "fuente": "Video Avonel 22 jun"
+            },
+            {
+              "id": "1.20",
+              "categoria": "Key Capabilities",
+              "critico": true,
+              "texto": "Incluye siempre Scalable & Modular Architecture, redactado hacia futuros use cases, no hacia el caso actual. Ej: \"Designed as a foundational system that supports future workflows, additional modules, and expanded reporting capabilities.\"",
+              "fuente": "Walnut 21 jul"
+            },
+            {
+              "id": "1.24",
+              "categoria": "TBD",
+              "critico": true,
+              "texto": "Los TBD: pocos y agrupados. Un TBD general (\"la cadencia y sus tiempos se definen con el cliente\") en vez de uno por cada detalle. Demasiados TBD angustian a Alex y al cliente.",
+              "fuente": "Videos Avonel 22 jun"
+            },
+            {
+              "id": "1.25",
+              "categoria": "TBD",
+              "critico": true,
+              "texto": "Lo obvio se asume, no se marca como TBD. Los detalles finos se guardan como preguntas para el cuestionario, no como TBD en el workflow.",
+              "fuente": "Videos Avonel 22 jun"
+            },
+            {
+              "id": "1.27",
+              "categoria": "Redacción",
+              "critico": true,
+              "texto": "Revisar los pasos heredados de otro proyecto: nodos copiados y pegados que quedaron con el nombre del cliente anterior.",
+              "fuente": "Video Avonel 22 jun (\"¿por qué Material Test Record Intake? Eso es de otro caso\")"
+            },
+            {
+              "id": "1.29",
+              "categoria": "Redacción",
+              "critico": true,
+              "texto": "La IA no \"decide\" el canal de follow-up. Redactar: \"The system determines and executes the appropriate follow-up action based on the configured workflow and the contact information available for the lead.\" Y el contenido de los mensajes lo define y aprueba el cliente, no lo genera la IA.",
+              "fuente": "Recomendación de Alex, KNOWLEDGE BASE 8 jun"
+            },
+            {
+              "id": "1.34",
+              "categoria": "Plataforma",
+              "critico": true,
+              "texto": "Verificar el PDF exportado nodo por nodo. No confiar en la vista del canvas.",
+              "fuente": "Walnut 16 jul"
+            }
+          ]
+        },
+        {
+          "id": "scope",
+          "titulo": "Scope",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "1.2",
+              "categoria": "Scope",
+              "critico": false,
+              "texto": "Máximo 1–3 casos. 4 solo si el flujo realmente lo exige.",
+              "fuente": "Training Session 15 abr"
+            },
+            {
+              "id": "1.3",
+              "categoria": "Scope",
+              "critico": false,
+              "texto": "Todo caso cuelga de un Centralized Dashboard / AI Nucleus (LATO OS).",
+              "fuente": "Training Session 15 abr"
+            },
+            {
+              "id": "1.4",
+              "categoria": "Scope",
+              "critico": false,
+              "texto": "Lo relacionado con fees no se pone en el workflow: solo se tiene en cuenta para la proposal.",
+              "fuente": "Shrager 24 jul"
+            }
+          ]
+        },
+        {
+          "id": "nomenclatura",
+          "titulo": "Nomenclatura",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "1.6",
+              "categoria": "Nomenclatura",
+              "critico": false,
+              "texto": "Si el cliente usa \"phase\" en SU proceso, no inventar términos nuevos (tipo \"Lane\"). Usar sub-IDs 3A / 3B / 3C: el condicional ya deja claro que son ramas.",
+              "fuente": "EHR Edge 16 jul"
+            }
+          ]
+        },
+        {
+          "id": "estructura",
+          "titulo": "Estructura",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "1.7",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "El primer nodo siempre define el intake channel: de dónde entra la data.",
+              "fuente": "QA Accuro, issue #02"
+            }
+          ]
+        },
+        {
+          "id": "l-gica",
+          "titulo": "Lógica",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "1.9",
+              "categoria": "Lógica",
+              "critico": false,
+              "texto": "Todos los paths, incluidos los de salida temprana (redirects, no-match, transferencias), terminan o convergen en el nodo de logging.",
+              "fuente": "QA Accuro issue #03"
+            },
+            {
+              "id": "1.10",
+              "categoria": "Lógica",
+              "critico": false,
+              "texto": "La escalation a humano tiene su propio mini árbol de decisión: live transfer (lo pide el caller) vs. ticket / queue routing.",
+              "fuente": "QA Accuro issue #04"
+            },
+            {
+              "id": "1.11",
+              "categoria": "Lógica",
+              "critico": false,
+              "texto": "Existe el nodo final de Data Logging & Reporting.",
+              "fuente": "Estándar en todos los workflows"
+            },
+            {
+              "id": "1.12",
+              "categoria": "Lógica",
+              "critico": false,
+              "texto": "Sin nodos duplicados, sin exit paths faltantes, sin process nodes mal etiquetados.",
+              "fuente": "Walnut 16 jul; Pipitone 30 jul (6 issues)"
+            },
+            {
+              "id": "1.13",
+              "categoria": "Lógica",
+              "critico": false,
+              "texto": "La forma del nodo corresponde a lo que es: proceso, interfaz/subproceso o decisión. No usar la de interfaz para un proceso normal.",
+              "fuente": "Health Clinic 20 may"
+            },
+            {
+              "id": "1.14",
+              "categoria": "Lógica",
+              "critico": false,
+              "texto": "La numeración de nodos [1], [2A-1]… corresponde al orden real del flujo después de cada cambio.",
+              "fuente": "L&L 30 jun"
+            }
+          ]
+        },
+        {
+          "id": "apis",
+          "titulo": "APIs",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "1.16",
+              "categoria": "APIs",
+              "critico": false,
+              "texto": "Ningún sistema que el cliente no haya confirmado, ni sistemas arrastrados de conversaciones viejas.",
+              "fuente": "Willoughby 21 jul (\"¿de dónde sacaste todos estos softwares?\")"
+            },
+            {
+              "id": "1.17",
+              "categoria": "APIs",
+              "critico": false,
+              "texto": "Todo sistema de la tabla Systems & Connections aparece en el flujo, y viceversa.",
+              "fuente": "Hudec 28 jul (Dental Intelligence estaba en la tabla, no en el flujo)"
+            },
+            {
+              "id": "1.18",
+              "categoria": "APIs",
+              "critico": false,
+              "texto": "Los sistemas fuera de scope se eliminan por completo, no se dejan mencionados.",
+              "fuente": "EHR (LinkedIn), Pipitone (ARIBA), Hudec (WorldPay, Dental Intelligence)"
+            }
+          ]
+        },
+        {
+          "id": "key-capabilities",
+          "titulo": "Key Capabilities",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "1.21",
+              "categoria": "Key Capabilities",
+              "critico": false,
+              "texto": "Incluye Security & Hosting: private models, no public LLMs, data stateside (AWS/Azure), SOC 2 in progress.",
+              "fuente": "Estándar"
+            },
+            {
+              "id": "1.22",
+              "categoria": "Key Capabilities",
+              "critico": false,
+              "texto": "Se actualizan después de cualquier cambio de scope; no se quedan con las de antes.",
+              "fuente": "Shrager 24 jul"
+            }
+          ]
+        },
+        {
+          "id": "redacci-n",
+          "titulo": "Redacción",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "1.23",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin comparaciones con la versión anterior: nada de \"instead of X\". El workflow describe el proceso, no los cambios.",
+              "fuente": "L&L 30 jun"
+            },
+            {
+              "id": "1.28",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "No atribuir responsabilidades ni \"quién hace qué\": la IA no identifica bien los roles de una reunión.",
+              "fuente": "Green Climate 24 jul"
+            },
+            {
+              "id": "1.30",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Preguntas clínicas, legales o de asesoría: escalation a persona, siempre.",
+              "fuente": "Health Clinic 18 may"
+            },
+            {
+              "id": "1.31",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "La lógica de intent detection es igual en todos los casos del mismo workflow: scheduling, conversación normal, escalation.",
+              "fuente": "Health Clinic 18 may"
+            }
+          ]
+        },
+        {
+          "id": "tbd",
+          "titulo": "TBD",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "1.26",
+              "categoria": "TBD",
+              "critico": false,
+              "texto": "Redactar \"pendiente de confirmación\", no \"not yet defined\".",
+              "fuente": "Video Avonel 22 jun"
+            }
+          ]
+        },
+        {
+          "id": "visual",
+          "titulo": "Visual",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "1.32",
+              "categoria": "Visual",
+              "critico": false,
+              "texto": "Textos de etiquetas cortos, para que no se solapen con las líneas del diagrama.",
+              "fuente": "EHR Edge 16 jul"
+            }
+          ]
+        },
+        {
+          "id": "plataforma",
+          "titulo": "Plataforma",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "1.33",
+              "categoria": "Plataforma",
+              "critico": false,
+              "texto": "Prompts cortos y por fases, ediciones quirúrgicas de a una. No prompts largos.",
+              "fuente": "Walnut 16 jul"
+            },
+            {
+              "id": "1.35",
+              "categoria": "Plataforma",
+              "critico": false,
+              "texto": "Aplicar a mano los ajustes que la plataforma no hace: posición de nodos, nombres, tabla de sistemas.",
+              "fuente": "Hudec 29 jul"
+            }
+          ]
+        },
+        {
+          "id": "entrega",
+          "titulo": "Entrega",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "1.36",
+              "categoria": "Entrega",
+              "critico": false,
+              "texto": "\"Approve architecture\" solo después de la revisión de Dana.",
+              "fuente": "Shrager 24 jul"
+            }
+          ]
+        }
+      ],
+      "total": 58,
+      "criticos": 17,
+      "propios": 36,
+      "transversales": 22
+    },
+    {
+      "id": "proposal",
+      "tabla": "2",
+      "corto": "Proposal",
+      "titulo": "Proposal",
+      "resumen": "El documento que va al cliente.",
+      "cuando": "Después de que el workflow está aprobado. Nunca se construye sobre la transcript.",
+      "bloques": [
+        {
+          "id": "transversales",
+          "titulo": "Transversales",
+          "subtitulo": "aplican a todos los entregables",
+          "tipo": "transversal",
+          "items": [
+            {
+              "id": "T.1",
+              "categoria": "Nombres",
+              "critico": true,
+              "texto": "Cero nombres de personas, en cualquier documento: ni del cliente, ni de LATO, ni de terceros. Y cero nombres de los clientes finales o grupos del cliente. Escribir \"el encargado de X\".",
+              "fuente": "Giovanni's 28 jul (\"esto lo hemos hablado mil veces\"), Green Climate, Allegeant, Health Clinic"
+            },
+            {
+              "id": "T.2",
+              "categoria": "Nombres",
+              "critico": true,
+              "texto": "Nombres propios verificados, nunca copiados tal cual de la transcripción: Zelis (no Celis/Zealous), Xplor Pay (no Wordplay), Baily (no Bailey), y los grupos con su nombre completo (no apodos tipo \"Gully\").",
+              "fuente": "Allegeant 20 jul, Hudec 28 jul, Baily 22 jul"
+            },
+            {
+              "id": "T.3",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin guiones largos (—) en la redacción. Solo en palabras compuestas.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "T.4",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin emojis ni símbolos ①②③ dentro de párrafos: listas numeradas 1) 2) 3).",
+              "fuente": "Allegeant 20 jul, punto 4"
+            },
+            {
+              "id": "T.5",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin referencias a grabaciones, transcripts ni reuniones.",
+              "fuente": "Allegeant 23 jul"
+            },
+            {
+              "id": "T.6",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin repeticiones: ni frases duplicadas entre secciones (el generador repite \"Please note: Please note:\"), ni información ya dada repetida en cada paso.",
+              "fuente": "Baily 21 jul; video Health Clinic 16 jul"
+            },
+            {
+              "id": "T.7",
+              "categoria": "Verificación",
+              "critico": true,
+              "texto": "Lo que genera el modelo se revisa punto por punto: inventa ítems, mete temas que no se hablaron (ej. HIPAA) y afirma datos sobre terceros que no son ciertos (límites de plan, capacidades de un sistema). Solo queda lo verificado y lo que salió de la reunión.",
+              "fuente": "Health Clinic 16 jul; video Avonel 22 jun"
+            },
+            {
+              "id": "T.8",
+              "categoria": "Verificación",
+              "critico": true,
+              "texto": "Nada de porcentajes ni estadísticas salvo que estemos 100% seguros de que se dijeron en la reunión. \"Las estadísticas son peligrosas.\"",
+              "fuente": "Video Health Clinic 16 jul"
+            },
+            {
+              "id": "T.9",
+              "categoria": "Cliente",
+              "critico": true,
+              "texto": "Nunca pedirle al cliente algo que ya confirmó en la reunión, que ya nos entregó, o a lo que ya tenemos acceso. Antes de mandar un cuestionario, cruzarlo contra la transcript.",
+              "fuente": "Willoughby 21 jul; Health Clinic 25 jun; video Accuro 3 jul"
+            },
+            {
+              "id": "T.10",
+              "categoria": "Consistencia",
+              "critico": true,
+              "texto": "Todo cambio se propaga en cadena: workflow → proposal → tabla de fees → key capabilities → tabla de systems & connections → timeline.",
+              "fuente": "River Salvage, Shrager, Walnut"
+            },
+            {
+              "id": "T.11",
+              "categoria": "Archivo",
+              "critico": false,
+              "texto": "Antes de avisar \"está listo\", confirmar que el archivo guardó: revisar el timestamp de última edición.",
+              "fuente": "Hudec 28 jul"
+            },
+            {
+              "id": "T.12",
+              "categoria": "Archivo",
+              "critico": false,
+              "texto": "Guardar y nombrar la versión anterior (ej. \"V45 LATOAI ARCHITECT\") antes de rehacer un documento o un workflow.",
+              "fuente": "Shrager 31 jul"
+            },
+            {
+              "id": "T.13",
+              "categoria": "Entrega",
+              "critico": false,
+              "texto": "Entregable en Google Docs, en la carpeta correcta y con permisos de edición, link en Byron's tasks, tracker actualizado. Al compartir, confirmar en qué tab está.",
+              "fuente": "Shrager 24 jul; Allegeant 17 y 23 jul; Avonel 22 jun"
+            },
+            {
+              "id": "T.14",
+              "categoria": "Entrega",
+              "critico": false,
+              "texto": "Numeración consecutiva de workflows coordinada con Dana, y proyecto creado en la plataforma con el código numérico correcto.",
+              "fuente": "Avonel 20 jun; Dana 14 jul"
+            },
+            {
+              "id": "T.15",
+              "categoria": "Idioma",
+              "critico": false,
+              "texto": "Todo lo que puede leer leadership va en inglés: reportes, API research, mensajes.",
+              "fuente": "Green Climate 24 jul"
+            },
+            {
+              "id": "T.16",
+              "categoria": "Comunicación",
+              "critico": false,
+              "texto": "Videos de review: varios cortos o medianos, nunca uno largo.",
+              "fuente": "Health Clinic 30 jul"
+            },
+            {
+              "id": "T.17",
+              "categoria": "Comunicación",
+              "critico": false,
+              "texto": "Todo correo al cliente se lo revisa Dan antes de enviarlo. Y ojo con la zona horaria: EST va una hora adelante de la nuestra.",
+              "fuente": "Health Clinic, notas de voz 3 jul"
+            },
+            {
+              "id": "T.18",
+              "categoria": "Posicionamiento",
+              "critico": false,
+              "texto": "Nunca se admite ante el cliente que los workflows se apoyan en modelos de IA abiertos.",
+              "fuente": "KNOWLEDGE BASE 6 abr"
+            },
+            {
+              "id": "T.19",
+              "categoria": "Alcance",
+              "critico": false,
+              "texto": "No construimos calendar tools desde cero: se usa Calendly o Google Calendar y nos conectamos por API.",
+              "fuente": "KNOWLEDGE BASE 4 may"
+            },
+            {
+              "id": "T.20",
+              "categoria": "Alcance",
+              "critico": false,
+              "texto": "Los happy paths primero: no sobrecomplicar la arquitectura sobre supuestos de una reunión de hora y media.",
+              "fuente": "Training Session 15 abr"
+            },
+            {
+              "id": "T.21",
+              "categoria": "Proceso",
+              "critico": false,
+              "texto": "Si el workflow no está 100% claro, se agenda reunión solo de workflow antes de mandarlo a estimates. No vale la pena pedir pricing de un sistema que quizás no es.",
+              "fuente": "Training Session 15 abr"
+            },
+            {
+              "id": "T.22",
+              "categoria": "Proceso",
+              "critico": false,
+              "texto": "Revisar support@latoai.com varias veces al día; cualquier requerimiento de cliente se le pasa a Alex, y se le confirma al cliente cuando queda resuelto.",
+              "fuente": "Dana 3 jul"
+            }
+          ]
+        },
+        {
+          "id": "criticos",
+          "titulo": "Críticos",
+          "subtitulo": "los que se han devuelto corregidos más de una vez",
+          "tipo": "critico",
+          "items": [
+            {
+              "id": "2.1",
+              "categoria": "Orden",
+              "critico": true,
+              "texto": "Workflow primero, proposal después. La proposal se construye sobre el workflow aprobado, no sobre la transcript.",
+              "fuente": "Shrager 24 jul (\"¿Tamos claros? Workflow first, proposal after that\")"
+            },
+            {
+              "id": "2.14",
+              "categoria": "Redacción",
+              "critico": true,
+              "texto": "Cero \"(API: X)\" en el Workflow Summary y en Operational Efficiency Highlights. Se habla por canal: via SMS, via email, via voice. Los nombres y detalles de API van únicamente en API Integrations.",
+              "fuente": "EHR 22 jul + Baily 21 jul (\"siempre me toca borrarlas a mano\")"
+            },
+            {
+              "id": "2.17",
+              "categoria": "Client Confirmation",
+              "critico": true,
+              "texto": "Solo lo que el cliente realmente tiene que dar o confirmar: accesos, licencias, credenciales, IDs, walkthroughs. Lista corta: en Baily pasó de 8 ítems a 3.",
+              "fuente": "Video de revisión de Baily, 22 jul"
+            },
+            {
+              "id": "2.18",
+              "categoria": "Client Confirmation",
+              "critico": true,
+              "texto": "Fuera todo lo que gestiona LATO: Twilio, SendGrid, Webbula. Eso no se le pide al cliente.",
+              "fuente": "Baily 21 jul"
+            },
+            {
+              "id": "2.19",
+              "categoria": "Client Confirmation",
+              "critico": true,
+              "texto": "Fuera las reglas de configuración interna (cadencias, fórmulas de scorecard, benchmarks, reglas de calificación, user roles & access): eso es material del cuestionario, no de la proposal.",
+              "fuente": "Video Baily 22 jul; video Accuro 3 jul (\"el prompt da 7 y no necesitamos 7, con estas tres tenemos\")"
+            },
+            {
+              "id": "2.22",
+              "categoria": "API Integrations",
+              "critico": true,
+              "texto": "Los servicios opcionales (ej. Webbula) se describen como opcionales en todas las secciones, no como parte permanente del flujo, y no aparecen como \"connectivity\" ni generan requisito de API para el cliente.",
+              "fuente": "Video Baily 22 jul (\"Webbula se muestra mucho y es opcional siempre\")"
+            },
+            {
+              "id": "2.24",
+              "categoria": "Dashboard",
+              "critico": true,
+              "texto": "Las Key capabilities son idénticas a las del workflow, no la lista que reescribe el generador. Eso incluye el bullet de Scalable & Modular Architecture.",
+              "fuente": "Walnut 21 jul"
+            },
+            {
+              "id": "2.25",
+              "categoria": "Terminología",
+              "critico": true,
+              "texto": "La terminología de la proposal es la misma del workflow. Si el workflow usa \"lanes\", la proposal dice lanes, no cases.",
+              "fuente": "Video EHR 22 jul"
+            },
+            {
+              "id": "2.31",
+              "categoria": "Fees",
+              "critico": true,
+              "texto": "El orden de las líneas sigue el orden en que leadership mandó el pricing, no el que uno prefiera.",
+              "fuente": "Video EHR 22 jul"
+            },
+            {
+              "id": "2.32",
+              "categoria": "Fees",
+              "critico": true,
+              "texto": "Lo que incluye cada línea dice exactamente lo que dice el pricing. Si el bundle de leads es \"unlimited communication via SMS and email\", no se le agrega voice: las llamadas se facturan en su propia línea.",
+              "fuente": "Video EHR 22 jul"
+            },
+            {
+              "id": "2.35",
+              "categoria": "Fees",
+              "critico": true,
+              "texto": "Formato numérico gringo: 1,000.00, miles con coma.",
+              "fuente": "Baily 21 jul"
+            },
+            {
+              "id": "2.37",
+              "categoria": "Fees",
+              "critico": true,
+              "texto": "Ningún valor de template sin reemplazar: $XX,XXX.00, [X], o servicios que no aplican al caso (ej. SendGrid).",
+              "fuente": "Comparación template vs. entregable de Baily"
+            },
+            {
+              "id": "2.39",
+              "categoria": "Fees",
+              "critico": true,
+              "texto": "Todo cambio en el workflow se refleja también en la tabla de fees.",
+              "fuente": "River Salvage 14 jul (\"te quedó faltando arreglar QuickBooks en la tabla de fees\")"
+            }
+          ]
+        },
+        {
+          "id": "orden",
+          "titulo": "Orden",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "2.2",
+              "categoria": "Orden",
+              "critico": false,
+              "texto": "La transcript se usa solo como contexto; el scope sale del workflow.",
+              "fuente": "Baily 15 jul"
+            },
+            {
+              "id": "2.3",
+              "categoria": "Orden",
+              "critico": false,
+              "texto": "Usar los últimos prompts compartidos y generar con el modelo Max, no Lite.",
+              "fuente": "Baily 15 jul; Shrager 24 jul"
+            },
+            {
+              "id": "2.4",
+              "categoria": "Orden",
+              "critico": false,
+              "texto": "Si aún no hay pricing: dejar el emoji de precio en el título y, al llegar el precio, quitarlo y poner \"- Proposal\".",
+              "fuente": "Accuro 3 jul"
+            }
+          ]
+        },
+        {
+          "id": "estructura",
+          "titulo": "Estructura",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "2.5",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "Secciones completas: Project Overview · Workflow Summary · Please note · API Integrations · Client Confirmation Requirements · Centralized Dashboard · Operational Efficiency Highlights · Scope of Work · Fees · Agreement.",
+              "fuente": "Template LP2XXX"
+            },
+            {
+              "id": "2.6",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "Títulos de casos consistentes: todos con número o todos sin número.",
+              "fuente": "Shrager 31 jul"
+            },
+            {
+              "id": "2.7",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "Si el proyecto no tiene workflow diagram, no se titula \"Workflow Summary\" ni se deja el \"Please note\" que remite al diagrama. La redacción cambia: no es step-by-step.",
+              "fuente": "LAN 28 jul"
+            },
+            {
+              "id": "2.8",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "Fases combinadas en un solo doc: la distinción Fase 1 / Fase 2 se mantiene en lo técnico y cada fase lleva su propio setup fee.",
+              "fuente": "Kovalev 21–22 jul"
+            },
+            {
+              "id": "2.9",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "En una proposal combinada: una sola tabla de fees con una fila por fase, sus precios y el total de las dos, volviendo al estilo del template original con celdas mergeadas. No dos tablas separadas.",
+              "fuente": "Video Kovalev 22 jul"
+            },
+            {
+              "id": "2.10",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "El Project Overview de una proposal combinada se replantea para explicar las dos fases juntas. El Workflow Summary sí se puede reusar de la Fase 1, con la aclaración de qué es de cada fase.",
+              "fuente": "Nota de voz Kovalev 21 jul"
+            },
+            {
+              "id": "2.11",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "Las proposals por fases separadas se guardan como respaldo. En la carpeta de Proposals queda una sola, con el código de los dos números al final.",
+              "fuente": "Nota de voz Kovalev 21 jul"
+            },
+            {
+              "id": "2.12",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "Intros cortas por sección: una para Fees en general (development + monthlies) y una para Setup Fees, como la de Monthly Fees.",
+              "fuente": "Kovalev 22 jul"
+            },
+            {
+              "id": "2.13",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "Si hay fases en paralelo, ponerlo con nota explícita en el timeline.",
+              "fuente": "Kovalev 22 jul"
+            }
+          ]
+        },
+        {
+          "id": "redacci-n",
+          "titulo": "Redacción",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "2.15",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Nombre del cliente correcto en TODO el documento: Baily ≠ Bailey; L&L Fabrication Inc. con el punto.",
+              "fuente": "Baily 22 jul; L&L 30 jun"
+            },
+            {
+              "id": "2.16",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "El estilo del logo del cliente no se estiliza en la proposal si el workflow no lo tiene estilizado.",
+              "fuente": "Accuro 3 jul"
+            }
+          ]
+        },
+        {
+          "id": "api-integrations",
+          "titulo": "API Integrations",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "2.20",
+              "categoria": "API Integrations",
+              "critico": false,
+              "texto": "Solo APIs reales y confirmadas. Lo no viable se describe como manual / drag-and-drop y no aparece como integración.",
+              "fuente": "EHR (Cause IQ), Shrager (UJS)"
+            },
+            {
+              "id": "2.21",
+              "categoria": "API Integrations",
+              "critico": false,
+              "texto": "Lo dudoso se resalta en amarillo y se pregunta antes de entregar.",
+              "fuente": "Baily, Kovalev, Shrager"
+            },
+            {
+              "id": "2.23",
+              "categoria": "API Integrations",
+              "critico": false,
+              "texto": "Si el workflow menciona un canal (email, SMS, voz), la API correspondiente tiene que estar tanto en el diagrama como en la proposal.",
+              "fuente": "Walnut 21 jul"
+            }
+          ]
+        },
+        {
+          "id": "scope-of-work",
+          "titulo": "Scope of Work",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "2.26",
+              "categoria": "Scope of Work",
+              "critico": false,
+              "texto": "Las 5 fases: Preparation & API Planning · Backend Development · Frontend Development · Testing & Optimization · Deployment & Client Review.",
+              "fuente": "Template"
+            },
+            {
+              "id": "2.27",
+              "categoria": "Scope of Work",
+              "critico": false,
+              "texto": "Las semanas por caso suman el total. Si el pricing no lo especifica, se confirma; no se asume.",
+              "fuente": "Shrager 24 jul"
+            }
+          ]
+        },
+        {
+          "id": "fees",
+          "titulo": "Fees",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "2.28",
+              "categoria": "Fees",
+              "critico": false,
+              "texto": "Una fila de setup fee por caso (o por fase).",
+              "fuente": "Template LP2XXX"
+            },
+            {
+              "id": "2.29",
+              "categoria": "Fees",
+              "critico": false,
+              "texto": "Monthly desglosado en filas numeradas: [1] Hosting/Maintenance/Support · [2] For Calls · [3] For Leads · [4] For Chatbot Sessions, cada una con su mínimo y su tarifa de excedente.",
+              "fuente": "Baily, EHR, Walnut"
+            },
+            {
+              "id": "2.30",
+              "categoria": "Fees",
+              "critico": false,
+              "texto": "Mínimos confirmados por Mike aplicados: 400 calls · 50 leads · 200 chatbot sessions. Calls y follow-up/leads van en líneas separadas.",
+              "fuente": "Walnut 21 jul, Baily 21 jul, EHR 21 jul"
+            },
+            {
+              "id": "2.33",
+              "categoria": "Fees",
+              "critico": false,
+              "texto": "Cada línea lleva dentro de su misma fila los bullets de qué incluye: platform hosting, dashboard, support.",
+              "fuente": "Video EHR 22 jul"
+            },
+            {
+              "id": "2.34",
+              "categoria": "Fees",
+              "critico": false,
+              "texto": "Hosting/Maintenance/Support no se cotiza aparte si no hay precio: se reparte dentro de las líneas existentes.",
+              "fuente": "Walnut 21 jul"
+            },
+            {
+              "id": "2.36",
+              "categoria": "Fees",
+              "critico": false,
+              "texto": "Notas al pie completas: Active Lead Definition, qué está incluido en el fee de LATO vs. qué es client-managed, sistemas sin API (no generan fee), activación del método de pago antes de producción, contrato de 12 meses.",
+              "fuente": "Baily, EHR"
+            },
+            {
+              "id": "2.38",
+              "categoria": "Fees",
+              "critico": false,
+              "texto": "Si se elimina un caso, los sistemas que seguían usándose en otro caso se mueven de fila, no se borran.",
+              "fuente": "Shrager 31 jul (Clover y DocuSign)"
+            }
+          ]
+        },
+        {
+          "id": "formato",
+          "titulo": "Formato",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "2.40",
+              "categoria": "Formato",
+              "critico": false,
+              "texto": "Ajustar espacios para que las secciones no queden partidas ni con textos cortos colgando al final de página.",
+              "fuente": "Video Baily 22 jul"
+            }
+          ]
+        }
+      ],
+      "total": 62,
+      "criticos": 19,
+      "propios": 40,
+      "transversales": 22
+    },
+    {
+      "id": "tech-scope",
+      "tabla": "3",
+      "corto": "Technical Scope",
+      "titulo": "Technical Scope Document",
+      "resumen": "El documento que leen el cliente y los developers.",
+      "cuando": "Antes de mandarlo a revisión. Casi todo el feedback aquí es de detalle: imágenes, capturas y formato.",
+      "bloques": [
+        {
+          "id": "transversales",
+          "titulo": "Transversales",
+          "subtitulo": "aplican a todos los entregables",
+          "tipo": "transversal",
+          "items": [
+            {
+              "id": "T.1",
+              "categoria": "Nombres",
+              "critico": true,
+              "texto": "Cero nombres de personas, en cualquier documento: ni del cliente, ni de LATO, ni de terceros. Y cero nombres de los clientes finales o grupos del cliente. Escribir \"el encargado de X\".",
+              "fuente": "Giovanni's 28 jul (\"esto lo hemos hablado mil veces\"), Green Climate, Allegeant, Health Clinic"
+            },
+            {
+              "id": "T.2",
+              "categoria": "Nombres",
+              "critico": true,
+              "texto": "Nombres propios verificados, nunca copiados tal cual de la transcripción: Zelis (no Celis/Zealous), Xplor Pay (no Wordplay), Baily (no Bailey), y los grupos con su nombre completo (no apodos tipo \"Gully\").",
+              "fuente": "Allegeant 20 jul, Hudec 28 jul, Baily 22 jul"
+            },
+            {
+              "id": "T.3",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin guiones largos (—) en la redacción. Solo en palabras compuestas.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "T.4",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin emojis ni símbolos ①②③ dentro de párrafos: listas numeradas 1) 2) 3).",
+              "fuente": "Allegeant 20 jul, punto 4"
+            },
+            {
+              "id": "T.5",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin referencias a grabaciones, transcripts ni reuniones.",
+              "fuente": "Allegeant 23 jul"
+            },
+            {
+              "id": "T.6",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin repeticiones: ni frases duplicadas entre secciones (el generador repite \"Please note: Please note:\"), ni información ya dada repetida en cada paso.",
+              "fuente": "Baily 21 jul; video Health Clinic 16 jul"
+            },
+            {
+              "id": "T.7",
+              "categoria": "Verificación",
+              "critico": true,
+              "texto": "Lo que genera el modelo se revisa punto por punto: inventa ítems, mete temas que no se hablaron (ej. HIPAA) y afirma datos sobre terceros que no son ciertos (límites de plan, capacidades de un sistema). Solo queda lo verificado y lo que salió de la reunión.",
+              "fuente": "Health Clinic 16 jul; video Avonel 22 jun"
+            },
+            {
+              "id": "T.8",
+              "categoria": "Verificación",
+              "critico": true,
+              "texto": "Nada de porcentajes ni estadísticas salvo que estemos 100% seguros de que se dijeron en la reunión. \"Las estadísticas son peligrosas.\"",
+              "fuente": "Video Health Clinic 16 jul"
+            },
+            {
+              "id": "T.9",
+              "categoria": "Cliente",
+              "critico": true,
+              "texto": "Nunca pedirle al cliente algo que ya confirmó en la reunión, que ya nos entregó, o a lo que ya tenemos acceso. Antes de mandar un cuestionario, cruzarlo contra la transcript.",
+              "fuente": "Willoughby 21 jul; Health Clinic 25 jun; video Accuro 3 jul"
+            },
+            {
+              "id": "T.10",
+              "categoria": "Consistencia",
+              "critico": true,
+              "texto": "Todo cambio se propaga en cadena: workflow → proposal → tabla de fees → key capabilities → tabla de systems & connections → timeline.",
+              "fuente": "River Salvage, Shrager, Walnut"
+            },
+            {
+              "id": "T.11",
+              "categoria": "Archivo",
+              "critico": false,
+              "texto": "Antes de avisar \"está listo\", confirmar que el archivo guardó: revisar el timestamp de última edición.",
+              "fuente": "Hudec 28 jul"
+            },
+            {
+              "id": "T.12",
+              "categoria": "Archivo",
+              "critico": false,
+              "texto": "Guardar y nombrar la versión anterior (ej. \"V45 LATOAI ARCHITECT\") antes de rehacer un documento o un workflow.",
+              "fuente": "Shrager 31 jul"
+            },
+            {
+              "id": "T.13",
+              "categoria": "Entrega",
+              "critico": false,
+              "texto": "Entregable en Google Docs, en la carpeta correcta y con permisos de edición, link en Byron's tasks, tracker actualizado. Al compartir, confirmar en qué tab está.",
+              "fuente": "Shrager 24 jul; Allegeant 17 y 23 jul; Avonel 22 jun"
+            },
+            {
+              "id": "T.14",
+              "categoria": "Entrega",
+              "critico": false,
+              "texto": "Numeración consecutiva de workflows coordinada con Dana, y proyecto creado en la plataforma con el código numérico correcto.",
+              "fuente": "Avonel 20 jun; Dana 14 jul"
+            },
+            {
+              "id": "T.15",
+              "categoria": "Idioma",
+              "critico": false,
+              "texto": "Todo lo que puede leer leadership va en inglés: reportes, API research, mensajes.",
+              "fuente": "Green Climate 24 jul"
+            },
+            {
+              "id": "T.16",
+              "categoria": "Comunicación",
+              "critico": false,
+              "texto": "Videos de review: varios cortos o medianos, nunca uno largo.",
+              "fuente": "Health Clinic 30 jul"
+            },
+            {
+              "id": "T.17",
+              "categoria": "Comunicación",
+              "critico": false,
+              "texto": "Todo correo al cliente se lo revisa Dan antes de enviarlo. Y ojo con la zona horaria: EST va una hora adelante de la nuestra.",
+              "fuente": "Health Clinic, notas de voz 3 jul"
+            },
+            {
+              "id": "T.18",
+              "categoria": "Posicionamiento",
+              "critico": false,
+              "texto": "Nunca se admite ante el cliente que los workflows se apoyan en modelos de IA abiertos.",
+              "fuente": "KNOWLEDGE BASE 6 abr"
+            },
+            {
+              "id": "T.19",
+              "categoria": "Alcance",
+              "critico": false,
+              "texto": "No construimos calendar tools desde cero: se usa Calendly o Google Calendar y nos conectamos por API.",
+              "fuente": "KNOWLEDGE BASE 4 may"
+            },
+            {
+              "id": "T.20",
+              "categoria": "Alcance",
+              "critico": false,
+              "texto": "Los happy paths primero: no sobrecomplicar la arquitectura sobre supuestos de una reunión de hora y media.",
+              "fuente": "Training Session 15 abr"
+            },
+            {
+              "id": "T.21",
+              "categoria": "Proceso",
+              "critico": false,
+              "texto": "Si el workflow no está 100% claro, se agenda reunión solo de workflow antes de mandarlo a estimates. No vale la pena pedir pricing de un sistema que quizás no es.",
+              "fuente": "Training Session 15 abr"
+            },
+            {
+              "id": "T.22",
+              "categoria": "Proceso",
+              "critico": false,
+              "texto": "Revisar support@latoai.com varias veces al día; cualquier requerimiento de cliente se le pasa a Alex, y se le confirma al cliente cuando queda resuelto.",
+              "fuente": "Dana 3 jul"
+            }
+          ]
+        },
+        {
+          "id": "criticos",
+          "titulo": "Críticos",
+          "subtitulo": "los que se han devuelto corregidos más de una vez",
+          "tipo": "critico",
+          "items": [
+            {
+              "id": "3.1",
+              "categoria": "Estructura",
+              "critico": true,
+              "texto": "Un solo documento, una sola tab, un solo PDF, aunque cubra dos procesos distintos. Se divide en secciones internas, nunca en documentos separados.",
+              "fuente": "Allegeant 17 jul (nota de voz)"
+            },
+            {
+              "id": "3.6",
+              "categoria": "Contenido",
+              "critico": true,
+              "texto": "Cada afirmación técnica verificada. ¿De verdad es WordPress? ¿De verdad está en Hostinger? ¿De verdad existe ese sistema de encriptación? No convertir en hecho un comentario o un chiste del cliente.",
+              "fuente": "Health Clinic 25 jun; Allegeant 20 jul, punto 13"
+            },
+            {
+              "id": "3.9",
+              "categoria": "Contenido",
+              "critico": true,
+              "texto": "Los intervalos de sincronización llevan nota de dependencia de la API del proveedor: no podemos garantizarlos.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "3.11",
+              "categoria": "Contenido",
+              "critico": true,
+              "texto": "Los pasos que ejecuta una persona se declaran explícitamente: el sistema notifica a la persona encargada; el sistema no envía ese correo.",
+              "fuente": "Allegeant 20 jul, punto 6"
+            },
+            {
+              "id": "3.17",
+              "categoria": "Imágenes",
+              "critico": true,
+              "texto": "Las imágenes son solo imágenes: cero texto o explicaciones dentro de la imagen. Los devs necesitan el doc en .md y ese texto se pierde. Toda explicación va en el cuerpo del paso; si la imagen ya trae texto, se rehace.",
+              "fuente": "Allegeant 20 jul, punto 3"
+            },
+            {
+              "id": "3.20",
+              "categoria": "Imágenes",
+              "critico": true,
+              "texto": "Las señalizaciones (flechas, círculos, números) apuntan al elemento correcto.",
+              "fuente": "Allegeant 20 jul, punto 9"
+            },
+            {
+              "id": "3.22",
+              "categoria": "Imágenes",
+              "critico": true,
+              "texto": "Legibilidad: los números y campos se leen. Si la fuente (grabación del notetaker) tiene mala calidad, se vuelve a capturar.",
+              "fuente": "Allegeant 20 jul, punto 11"
+            },
+            {
+              "id": "3.24",
+              "categoria": "Formato",
+              "critico": true,
+              "texto": "Título y texto de la figura quedan juntos. Usar page break cuando la imagen los separa.",
+              "fuente": "Allegeant 20 jul, punto 5"
+            },
+            {
+              "id": "3.25",
+              "categoria": "Formato",
+              "critico": true,
+              "texto": "Sin títulos ni textos huérfanos al final de página.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "3.29",
+              "categoria": "Formato",
+              "critico": true,
+              "texto": "Los niveles de heading empiezan en Heading 1, no en Heading 2, y de ahí se usa la extensión de numeración. El modelo suele arrancar en H2 y descuadra toda la jerarquía.",
+              "fuente": "Video Health Clinic 25 jun"
+            }
+          ]
+        },
+        {
+          "id": "estructura",
+          "titulo": "Estructura",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "3.2",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "Cubre el proceso completo acordado (ej. martes Y viernes), con el contexto de qué se hace cada día.",
+              "fuente": "Allegeant 17 jul"
+            },
+            {
+              "id": "3.3",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "La longitud no es problema: es un tech scope, va todo lo importante.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "3.4",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "Secciones tipo: Purpose & Scope · Application Architecture (auth, data source, sync) · Reference Source · Portal Structure · módulo por módulo · Cross-Module Data Relationships · Data Accuracy & Rebuild Plan · Assumptions & Client Confirmations · Out of Scope.",
+              "fuente": "Health Clinic Ph2"
+            },
+            {
+              "id": "3.5",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "Si cambia la estructura del doc, la intro y el overview se actualizan también.",
+              "fuente": "Health Clinic 25 jun"
+            }
+          ]
+        },
+        {
+          "id": "contenido",
+          "titulo": "Contenido",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "3.7",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Todos los portales y roles documentados (Admin, Sales Rep, Partners), ninguno omitido, cada uno con sus capturas.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "3.8",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Conceptos parecidos bien diferenciados: SSO vs. individual login.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "3.10",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Incluir un módulo de estado de sincronización visible para el cliente: última actualización, errores, reintentos. Referencia: Stambrosky.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "3.12",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Las reglas que dependen de un cheat sheet del cliente se declaran como tal, con captura de la hoja. Nada de tablas presentadas como información cierta: mejor bulletpoints de ejemplo.",
+              "fuente": "Allegeant 20 jul, punto 8"
+            },
+            {
+              "id": "3.13",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Los wizards se documentan completos, pantalla por pantalla, sin saltarse pasos.",
+              "fuente": "Allegeant 20 jul punto 12 y 23 jul"
+            },
+            {
+              "id": "3.14",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Las referencias cruzadas (\"see 3\") existen de verdad.",
+              "fuente": "Allegeant 20 jul, punto 13"
+            },
+            {
+              "id": "3.15",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Cada sección al nivel de detalle correcto: si algo queda corto (ej. el assembly del package), se amplía con más capturas.",
+              "fuente": "Allegeant 20 jul, punto 7"
+            },
+            {
+              "id": "3.16",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "No afirmar cosas técnicamente falsas por simplificar. Si hay una alternativa, va como nota, no como afirmación.",
+              "fuente": "Video Health Clinic 16 jul (los leads sí se podrían leer desde Practice Better: de ahí vienen los correos)"
+            }
+          ]
+        },
+        {
+          "id": "im-genes",
+          "titulo": "Imágenes",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "3.18",
+              "categoria": "Imágenes",
+              "critico": false,
+              "texto": "Cada figura numerada, con título, ubicada en el paso que ilustra.",
+              "fuente": "Allegeant"
+            },
+            {
+              "id": "3.19",
+              "categoria": "Imágenes",
+              "critico": false,
+              "texto": "Una captura por paso. No combinar varios pasos en una sola imagen.",
+              "fuente": "Allegeant 23 jul"
+            },
+            {
+              "id": "3.21",
+              "categoria": "Imágenes",
+              "critico": false,
+              "texto": "La captura corresponde al proceso descrito en ese paso.",
+              "fuente": "Allegeant 20 jul, punto 10"
+            },
+            {
+              "id": "3.23",
+              "categoria": "Imágenes",
+              "critico": false,
+              "texto": "Si faltan pantallas del proceso, se vuelven a capturar: en el check wizard había más interfaces.",
+              "fuente": "Allegeant 20 jul, punto 12"
+            }
+          ]
+        },
+        {
+          "id": "formato",
+          "titulo": "Formato",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "3.26",
+              "categoria": "Formato",
+              "critico": false,
+              "texto": "Las tablas no se parten entre páginas.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "3.27",
+              "categoria": "Formato",
+              "critico": false,
+              "texto": "Estilo de encabezados de tabla consistente: todas con azul o todas sin color, no mezclado.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "3.28",
+              "categoria": "Formato",
+              "critico": false,
+              "texto": "Fuente y tamaño consistentes en todo el documento.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "3.30",
+              "categoria": "Formato",
+              "critico": false,
+              "texto": "Espaciado parejo entre secciones: ni bloques pegados ni huecos gigantes entre headings.",
+              "fuente": "Video Health Clinic 25 jun"
+            }
+          ]
+        }
+      ],
+      "total": 52,
+      "criticos": 16,
+      "propios": 30,
+      "transversales": 22
+    },
+    {
+      "id": "api-research",
+      "tabla": "4",
+      "corto": "API Research",
+      "titulo": "API Research Report",
+      "resumen": "El reporte de viabilidad de APIs de un cliente.",
+      "cuando": "Antes de pasarlo a Dana o a Mike. Alimenta directamente al workflow y a la proposal.",
+      "bloques": [
+        {
+          "id": "transversales",
+          "titulo": "Transversales",
+          "subtitulo": "aplican a todos los entregables",
+          "tipo": "transversal",
+          "items": [
+            {
+              "id": "T.1",
+              "categoria": "Nombres",
+              "critico": true,
+              "texto": "Cero nombres de personas, en cualquier documento: ni del cliente, ni de LATO, ni de terceros. Y cero nombres de los clientes finales o grupos del cliente. Escribir \"el encargado de X\".",
+              "fuente": "Giovanni's 28 jul (\"esto lo hemos hablado mil veces\"), Green Climate, Allegeant, Health Clinic"
+            },
+            {
+              "id": "T.2",
+              "categoria": "Nombres",
+              "critico": true,
+              "texto": "Nombres propios verificados, nunca copiados tal cual de la transcripción: Zelis (no Celis/Zealous), Xplor Pay (no Wordplay), Baily (no Bailey), y los grupos con su nombre completo (no apodos tipo \"Gully\").",
+              "fuente": "Allegeant 20 jul, Hudec 28 jul, Baily 22 jul"
+            },
+            {
+              "id": "T.3",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin guiones largos (—) en la redacción. Solo en palabras compuestas.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "T.4",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin emojis ni símbolos ①②③ dentro de párrafos: listas numeradas 1) 2) 3).",
+              "fuente": "Allegeant 20 jul, punto 4"
+            },
+            {
+              "id": "T.5",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin referencias a grabaciones, transcripts ni reuniones.",
+              "fuente": "Allegeant 23 jul"
+            },
+            {
+              "id": "T.6",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin repeticiones: ni frases duplicadas entre secciones (el generador repite \"Please note: Please note:\"), ni información ya dada repetida en cada paso.",
+              "fuente": "Baily 21 jul; video Health Clinic 16 jul"
+            },
+            {
+              "id": "T.7",
+              "categoria": "Verificación",
+              "critico": true,
+              "texto": "Lo que genera el modelo se revisa punto por punto: inventa ítems, mete temas que no se hablaron (ej. HIPAA) y afirma datos sobre terceros que no son ciertos (límites de plan, capacidades de un sistema). Solo queda lo verificado y lo que salió de la reunión.",
+              "fuente": "Health Clinic 16 jul; video Avonel 22 jun"
+            },
+            {
+              "id": "T.8",
+              "categoria": "Verificación",
+              "critico": true,
+              "texto": "Nada de porcentajes ni estadísticas salvo que estemos 100% seguros de que se dijeron en la reunión. \"Las estadísticas son peligrosas.\"",
+              "fuente": "Video Health Clinic 16 jul"
+            },
+            {
+              "id": "T.9",
+              "categoria": "Cliente",
+              "critico": true,
+              "texto": "Nunca pedirle al cliente algo que ya confirmó en la reunión, que ya nos entregó, o a lo que ya tenemos acceso. Antes de mandar un cuestionario, cruzarlo contra la transcript.",
+              "fuente": "Willoughby 21 jul; Health Clinic 25 jun; video Accuro 3 jul"
+            },
+            {
+              "id": "T.10",
+              "categoria": "Consistencia",
+              "critico": true,
+              "texto": "Todo cambio se propaga en cadena: workflow → proposal → tabla de fees → key capabilities → tabla de systems & connections → timeline.",
+              "fuente": "River Salvage, Shrager, Walnut"
+            },
+            {
+              "id": "T.11",
+              "categoria": "Archivo",
+              "critico": false,
+              "texto": "Antes de avisar \"está listo\", confirmar que el archivo guardó: revisar el timestamp de última edición.",
+              "fuente": "Hudec 28 jul"
+            },
+            {
+              "id": "T.12",
+              "categoria": "Archivo",
+              "critico": false,
+              "texto": "Guardar y nombrar la versión anterior (ej. \"V45 LATOAI ARCHITECT\") antes de rehacer un documento o un workflow.",
+              "fuente": "Shrager 31 jul"
+            },
+            {
+              "id": "T.13",
+              "categoria": "Entrega",
+              "critico": false,
+              "texto": "Entregable en Google Docs, en la carpeta correcta y con permisos de edición, link en Byron's tasks, tracker actualizado. Al compartir, confirmar en qué tab está.",
+              "fuente": "Shrager 24 jul; Allegeant 17 y 23 jul; Avonel 22 jun"
+            },
+            {
+              "id": "T.14",
+              "categoria": "Entrega",
+              "critico": false,
+              "texto": "Numeración consecutiva de workflows coordinada con Dana, y proyecto creado en la plataforma con el código numérico correcto.",
+              "fuente": "Avonel 20 jun; Dana 14 jul"
+            },
+            {
+              "id": "T.15",
+              "categoria": "Idioma",
+              "critico": false,
+              "texto": "Todo lo que puede leer leadership va en inglés: reportes, API research, mensajes.",
+              "fuente": "Green Climate 24 jul"
+            },
+            {
+              "id": "T.16",
+              "categoria": "Comunicación",
+              "critico": false,
+              "texto": "Videos de review: varios cortos o medianos, nunca uno largo.",
+              "fuente": "Health Clinic 30 jul"
+            },
+            {
+              "id": "T.17",
+              "categoria": "Comunicación",
+              "critico": false,
+              "texto": "Todo correo al cliente se lo revisa Dan antes de enviarlo. Y ojo con la zona horaria: EST va una hora adelante de la nuestra.",
+              "fuente": "Health Clinic, notas de voz 3 jul"
+            },
+            {
+              "id": "T.18",
+              "categoria": "Posicionamiento",
+              "critico": false,
+              "texto": "Nunca se admite ante el cliente que los workflows se apoyan en modelos de IA abiertos.",
+              "fuente": "KNOWLEDGE BASE 6 abr"
+            },
+            {
+              "id": "T.19",
+              "categoria": "Alcance",
+              "critico": false,
+              "texto": "No construimos calendar tools desde cero: se usa Calendly o Google Calendar y nos conectamos por API.",
+              "fuente": "KNOWLEDGE BASE 4 may"
+            },
+            {
+              "id": "T.20",
+              "categoria": "Alcance",
+              "critico": false,
+              "texto": "Los happy paths primero: no sobrecomplicar la arquitectura sobre supuestos de una reunión de hora y media.",
+              "fuente": "Training Session 15 abr"
+            },
+            {
+              "id": "T.21",
+              "categoria": "Proceso",
+              "critico": false,
+              "texto": "Si el workflow no está 100% claro, se agenda reunión solo de workflow antes de mandarlo a estimates. No vale la pena pedir pricing de un sistema que quizás no es.",
+              "fuente": "Training Session 15 abr"
+            },
+            {
+              "id": "T.22",
+              "categoria": "Proceso",
+              "critico": false,
+              "texto": "Revisar support@latoai.com varias veces al día; cualquier requerimiento de cliente se le pasa a Alex, y se le confirma al cliente cuando queda resuelto.",
+              "fuente": "Dana 3 jul"
+            }
+          ]
+        },
+        {
+          "id": "criticos",
+          "titulo": "Críticos",
+          "subtitulo": "los que se han devuelto corregidos más de una vez",
+          "tipo": "critico",
+          "items": [
+            {
+              "id": "4.1",
+              "categoria": "Método",
+              "critico": true,
+              "texto": "Solo fuentes oficiales y actuales. Nunca el knowledge base propio del modelo.",
+              "fuente": "Prompt oficial, KNOWLEDGE BASE 6 abr"
+            },
+            {
+              "id": "4.4",
+              "categoria": "Contenido",
+              "critico": true,
+              "texto": "Reportar las posibilidades encontradas, no dar recomendaciones ni asumir el approach. Si falta info, se reporta \"se necesita contactar al vendor\" y ya.",
+              "fuente": "Green Climate 24 jul"
+            }
+          ]
+        },
+        {
+          "id": "contenido",
+          "titulo": "Contenido",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "4.2",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Responder siempre las cuatro preguntas: ¿existe API pública? ¿hay sandbox? ¿cómo se obtienen las keys de producción y de sandbox, requiere partner o aprobación? ¿hay costo o suscripción extra?",
+              "fuente": "Prompt oficial"
+            },
+            {
+              "id": "4.3",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Veredicto explícito: viable · requiere validación con el vendor · no viable.",
+              "fuente": "Ejemplos Foundation / McCormick / Trimble"
+            },
+            {
+              "id": "4.5",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Incluir las preguntas concretas para el vendor y sus datos de contacto.",
+              "fuente": "Green Climate, Giovanni's"
+            },
+            {
+              "id": "4.6",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Declarar qué parte del scope queda TBD mientras el vendor no responda.",
+              "fuente": "Green Climate, Giovanni's"
+            },
+            {
+              "id": "4.7",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Si la API no existe: definir la alternativa (drag & drop, CSV, middleware) y actualizar workflow y proposal.",
+              "fuente": "EHR (Cause IQ), Shrager (UJS)"
+            }
+          ]
+        },
+        {
+          "id": "proceso",
+          "titulo": "Proceso",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "4.8",
+              "categoria": "Proceso",
+              "critico": false,
+              "texto": "Primero email con preguntas puntuales al vendor. Reunión solo si ellos la piden o no responden por escrito.",
+              "fuente": "KNOWLEDGE BASE 23 abr"
+            }
+          ]
+        }
+      ],
+      "total": 30,
+      "criticos": 8,
+      "propios": 8,
+      "transversales": 22
+    },
+    {
+      "id": "business-logic",
+      "tabla": "5",
+      "corto": "Business Logic",
+      "titulo": "Business Logic Doc / Designer Brief",
+      "resumen": "Lo que va a devs y diseñadores.",
+      "cuando": "Antes de entregárselo a Alex o al equipo de diseño.",
+      "bloques": [
+        {
+          "id": "transversales",
+          "titulo": "Transversales",
+          "subtitulo": "aplican a todos los entregables",
+          "tipo": "transversal",
+          "items": [
+            {
+              "id": "T.1",
+              "categoria": "Nombres",
+              "critico": true,
+              "texto": "Cero nombres de personas, en cualquier documento: ni del cliente, ni de LATO, ni de terceros. Y cero nombres de los clientes finales o grupos del cliente. Escribir \"el encargado de X\".",
+              "fuente": "Giovanni's 28 jul (\"esto lo hemos hablado mil veces\"), Green Climate, Allegeant, Health Clinic"
+            },
+            {
+              "id": "T.2",
+              "categoria": "Nombres",
+              "critico": true,
+              "texto": "Nombres propios verificados, nunca copiados tal cual de la transcripción: Zelis (no Celis/Zealous), Xplor Pay (no Wordplay), Baily (no Bailey), y los grupos con su nombre completo (no apodos tipo \"Gully\").",
+              "fuente": "Allegeant 20 jul, Hudec 28 jul, Baily 22 jul"
+            },
+            {
+              "id": "T.3",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin guiones largos (—) en la redacción. Solo en palabras compuestas.",
+              "fuente": "Health Clinic 25 jun"
+            },
+            {
+              "id": "T.4",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin emojis ni símbolos ①②③ dentro de párrafos: listas numeradas 1) 2) 3).",
+              "fuente": "Allegeant 20 jul, punto 4"
+            },
+            {
+              "id": "T.5",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin referencias a grabaciones, transcripts ni reuniones.",
+              "fuente": "Allegeant 23 jul"
+            },
+            {
+              "id": "T.6",
+              "categoria": "Redacción",
+              "critico": false,
+              "texto": "Sin repeticiones: ni frases duplicadas entre secciones (el generador repite \"Please note: Please note:\"), ni información ya dada repetida en cada paso.",
+              "fuente": "Baily 21 jul; video Health Clinic 16 jul"
+            },
+            {
+              "id": "T.7",
+              "categoria": "Verificación",
+              "critico": true,
+              "texto": "Lo que genera el modelo se revisa punto por punto: inventa ítems, mete temas que no se hablaron (ej. HIPAA) y afirma datos sobre terceros que no son ciertos (límites de plan, capacidades de un sistema). Solo queda lo verificado y lo que salió de la reunión.",
+              "fuente": "Health Clinic 16 jul; video Avonel 22 jun"
+            },
+            {
+              "id": "T.8",
+              "categoria": "Verificación",
+              "critico": true,
+              "texto": "Nada de porcentajes ni estadísticas salvo que estemos 100% seguros de que se dijeron en la reunión. \"Las estadísticas son peligrosas.\"",
+              "fuente": "Video Health Clinic 16 jul"
+            },
+            {
+              "id": "T.9",
+              "categoria": "Cliente",
+              "critico": true,
+              "texto": "Nunca pedirle al cliente algo que ya confirmó en la reunión, que ya nos entregó, o a lo que ya tenemos acceso. Antes de mandar un cuestionario, cruzarlo contra la transcript.",
+              "fuente": "Willoughby 21 jul; Health Clinic 25 jun; video Accuro 3 jul"
+            },
+            {
+              "id": "T.10",
+              "categoria": "Consistencia",
+              "critico": true,
+              "texto": "Todo cambio se propaga en cadena: workflow → proposal → tabla de fees → key capabilities → tabla de systems & connections → timeline.",
+              "fuente": "River Salvage, Shrager, Walnut"
+            },
+            {
+              "id": "T.11",
+              "categoria": "Archivo",
+              "critico": false,
+              "texto": "Antes de avisar \"está listo\", confirmar que el archivo guardó: revisar el timestamp de última edición.",
+              "fuente": "Hudec 28 jul"
+            },
+            {
+              "id": "T.12",
+              "categoria": "Archivo",
+              "critico": false,
+              "texto": "Guardar y nombrar la versión anterior (ej. \"V45 LATOAI ARCHITECT\") antes de rehacer un documento o un workflow.",
+              "fuente": "Shrager 31 jul"
+            },
+            {
+              "id": "T.13",
+              "categoria": "Entrega",
+              "critico": false,
+              "texto": "Entregable en Google Docs, en la carpeta correcta y con permisos de edición, link en Byron's tasks, tracker actualizado. Al compartir, confirmar en qué tab está.",
+              "fuente": "Shrager 24 jul; Allegeant 17 y 23 jul; Avonel 22 jun"
+            },
+            {
+              "id": "T.14",
+              "categoria": "Entrega",
+              "critico": false,
+              "texto": "Numeración consecutiva de workflows coordinada con Dana, y proyecto creado en la plataforma con el código numérico correcto.",
+              "fuente": "Avonel 20 jun; Dana 14 jul"
+            },
+            {
+              "id": "T.15",
+              "categoria": "Idioma",
+              "critico": false,
+              "texto": "Todo lo que puede leer leadership va en inglés: reportes, API research, mensajes.",
+              "fuente": "Green Climate 24 jul"
+            },
+            {
+              "id": "T.16",
+              "categoria": "Comunicación",
+              "critico": false,
+              "texto": "Videos de review: varios cortos o medianos, nunca uno largo.",
+              "fuente": "Health Clinic 30 jul"
+            },
+            {
+              "id": "T.17",
+              "categoria": "Comunicación",
+              "critico": false,
+              "texto": "Todo correo al cliente se lo revisa Dan antes de enviarlo. Y ojo con la zona horaria: EST va una hora adelante de la nuestra.",
+              "fuente": "Health Clinic, notas de voz 3 jul"
+            },
+            {
+              "id": "T.18",
+              "categoria": "Posicionamiento",
+              "critico": false,
+              "texto": "Nunca se admite ante el cliente que los workflows se apoyan en modelos de IA abiertos.",
+              "fuente": "KNOWLEDGE BASE 6 abr"
+            },
+            {
+              "id": "T.19",
+              "categoria": "Alcance",
+              "critico": false,
+              "texto": "No construimos calendar tools desde cero: se usa Calendly o Google Calendar y nos conectamos por API.",
+              "fuente": "KNOWLEDGE BASE 4 may"
+            },
+            {
+              "id": "T.20",
+              "categoria": "Alcance",
+              "critico": false,
+              "texto": "Los happy paths primero: no sobrecomplicar la arquitectura sobre supuestos de una reunión de hora y media.",
+              "fuente": "Training Session 15 abr"
+            },
+            {
+              "id": "T.21",
+              "categoria": "Proceso",
+              "critico": false,
+              "texto": "Si el workflow no está 100% claro, se agenda reunión solo de workflow antes de mandarlo a estimates. No vale la pena pedir pricing de un sistema que quizás no es.",
+              "fuente": "Training Session 15 abr"
+            },
+            {
+              "id": "T.22",
+              "categoria": "Proceso",
+              "critico": false,
+              "texto": "Revisar support@latoai.com varias veces al día; cualquier requerimiento de cliente se le pasa a Alex, y se le confirma al cliente cuando queda resuelto.",
+              "fuente": "Dana 3 jul"
+            }
+          ]
+        },
+        {
+          "id": "criticos",
+          "titulo": "Críticos",
+          "subtitulo": "los que se han devuelto corregidos más de una vez",
+          "tipo": "critico",
+          "items": [
+            {
+              "id": "5.1",
+              "categoria": "Nivel de detalle",
+              "critico": true,
+              "texto": "No es un technical scope. Es una lista de cositas a tener en cuenta: título, descripción corta, lenguaje muy simple, sin exagerar ni pedir de más. Formato tipo Buffalo Valley, no tipo Witkowski.",
+              "fuente": "Health Clinic, notas de voz 16 jul"
+            },
+            {
+              "id": "5.5",
+              "categoria": "Audiencia",
+              "critico": true,
+              "texto": "Escribir para quien lo va a leer. Si es para devs, no explicarles lo que ya saben (que la IA habla en lenguaje natural, cómo funciona un CRM board); sí explicarles lo que no saben (que el costo es por paciente, que todo queda logueado).",
+              "fuente": "Videos Health Clinic 16 jul"
+            }
+          ]
+        },
+        {
+          "id": "contenido",
+          "titulo": "Contenido",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "5.2",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Recoge la lógica de negocio que se habló en la reunión y que la plataforma debe cumplir: ventanas horarias de notificación, zonas horarias por estado, reglas de escalación, cadencias por paciente o cliente, toggles de on/off.",
+              "fuente": "Health Clinic 16 jul"
+            },
+            {
+              "id": "5.3",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Cada regla que implique una interfaz describe esa interfaz (ej. la bandeja de escalaciones con su campo de respuesta y su botón de enviar al provider), con screenshot de referencia cuando exista.",
+              "fuente": "Health Clinic 16 jul"
+            },
+            {
+              "id": "5.4",
+              "categoria": "Contenido",
+              "critico": false,
+              "texto": "Screenshots solo donde apliquen. Lo que se habló y no tiene pantalla va solo en texto.",
+              "fuente": "Health Clinic 16 jul"
+            }
+          ]
+        },
+        {
+          "id": "estructura",
+          "titulo": "Estructura",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "5.6",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "En briefs de plataforma se organiza por módulos o tabs, con una intro que explique qué módulos trae cada fase.",
+              "fuente": "Witkowski 13 jul"
+            },
+            {
+              "id": "5.7",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "Cada módulo lleva sus tres pantallas: lista, detalle y formulario de creación, con sus campos.",
+              "fuente": "Witkowski 13 jul"
+            },
+            {
+              "id": "5.8",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "No exagerar en campos. Si hay duda, dejarlos como no obligatorios. La idea es plataformas simples para el cliente.",
+              "fuente": "Witkowski 13 jul"
+            },
+            {
+              "id": "5.9",
+              "categoria": "Estructura",
+              "critico": false,
+              "texto": "Dividir por fases para que la revisión (interna y con el cliente) sea por partes y no una sola tanda enorme.",
+              "fuente": "Witkowski 13 jul"
+            }
+          ]
+        },
+        {
+          "id": "uso",
+          "titulo": "Uso",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "5.10",
+              "categoria": "Uso",
+              "critico": false,
+              "texto": "Sirve también como memoria interna: dentro de meses volvemos a él para entender cómo funciona el negocio del cliente. Escribirlo pensando en eso.",
+              "fuente": "Health Clinic 16 jul"
+            }
+          ]
+        },
+        {
+          "id": "precisi-n",
+          "titulo": "Precisión",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "5.11",
+              "categoria": "Precisión",
+              "critico": false,
+              "texto": "Las reglas se declaran al nivel de granularidad correcto: per patient, per medication, no \"por paciente\" a secas, cuando una misma factura trae varios medicamentos con periodos distintos.",
+              "fuente": "Video Health Clinic 16 jul"
+            },
+            {
+              "id": "5.12",
+              "categoria": "Precisión",
+              "critico": false,
+              "texto": "Los canales que NO usamos no se mencionan. Si el caso no hace voz, no aparece voz en ninguna parte.",
+              "fuente": "Video Health Clinic 16 jul"
+            },
+            {
+              "id": "5.13",
+              "categoria": "Precisión",
+              "critico": false,
+              "texto": "No inventar aprobaciones ni confirmaciones con terceros que no tienen que ver con ese punto.",
+              "fuente": "Video Health Clinic 16 jul"
+            }
+          ]
+        },
+        {
+          "id": "requerimientos",
+          "titulo": "Requerimientos",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "5.14",
+              "categoria": "Requerimientos",
+              "critico": false,
+              "texto": "Los cambios pedidos a Alex van con screenshot y el requerimiento concreto (estilo Martik / Buffalo Valley), no en prosa. Si no se les dice exactamente dónde está el cambio, no lo encuentran.",
+              "fuente": "Willoughby 3 jul; River Salvage 14 jul"
+            }
+          ]
+        },
+        {
+          "id": "prototipos",
+          "titulo": "Prototipos",
+          "subtitulo": "",
+          "tipo": "categoria",
+          "items": [
+            {
+              "id": "5.15",
+              "categoria": "Prototipos",
+              "critico": false,
+              "texto": "Al revisar un prototipo contra la arquitectura: comparar campo por campo contra el ejemplo de referencia (Stambrosky), confirmar que existe la interfaz de sincronización de cada integración, que las facturas se pueden cargar, ver y editar (manual entry no es digitar todo), y que hay dashboard de reportes. Usar la terminología del cliente: subcontractors, no vendors.",
+              "fuente": "Videos Willoughby 3 jul"
+            }
+          ]
+        }
+      ],
+      "total": 37,
+      "criticos": 8,
+      "propios": 15,
+      "transversales": 22
+    }
+  ]
+}

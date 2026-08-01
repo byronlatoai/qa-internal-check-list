@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QA Checklist — LATO AI</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✅</text></svg>">
+</head>
+<body>
+
+<div class="wrap">
+
+  <a class="backlink" href="index.html">← Todos los checklists</a>
+
+  <header class="mast" style="border-bottom-width:2px;padding-top:18px">
+    <div class="eyebrow">LATO AI · QA</div>
+    <h1 id="titulo">…<span class="sub" id="resumen"></span></h1>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <div id="banner"></div>
+
+  <div class="ficha" id="ficha">
+    <label><span class="lbl">Cliente</span><input id="fCliente" placeholder="Baily Insurance Agency" autocomplete="off"></label>
+    <label><span class="lbl">Proyecto / código</span><input id="fProyecto" placeholder="W26082" autocomplete="off"></label>
+    <label><span class="lbl">Revisor</span><input id="fRevisor" placeholder="Byron" autocomplete="off"></label>
+    <label><span class="lbl">Fecha</span><input id="fFecha" type="date"></label>
+  </div>
+
+  <div class="toolbar">
+    <div class="progress">
+      <div class="bar"><div class="fill" id="fill"></div></div>
+      <span class="num" id="num">0 / 0</span>
+    </div>
+    <div class="spacer"></div>
+    <button class="btn" id="bCriticos" aria-pressed="false">Solo críticos</button>
+    <button class="btn" id="bPendientes" aria-pressed="false">Solo pendientes</button>
+    <button class="btn ok" id="bLink">Copiar link del resultado</button>
+    <button class="btn" id="bCsv">CSV</button>
+    <button class="btn" id="bJson">JSON</button>
+    <button class="btn" id="bPrint">Imprimir</button>
+    <button class="btn" id="bReset">Limpiar</button>
+  </div>
+
+  <main id="lista"></main>
+
+  <p class="foot" id="pie"></p>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/state.js"></script>
+<script src="assets/js/export.js"></script>
+<script src="assets/js/checklist.js"></script>
+
+</body>
+</html>

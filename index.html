@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QA Checklist — LATO AI</title>
+<meta name="description" content="Checklist de control de calidad de LATO AI para workflows, proposals, technical scope documents, API research y business logic docs.">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✅</text></svg>">
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div class="eyebrow">LATO AI · Control de calidad interno</div>
+    <h1>QA Checklist
+      <span class="sub">Elige el entregable que vas a revisar. Cada checklist trae todo lo que hay
+      que verificar antes de mandarlo: las reglas transversales, los puntos críticos de ese documento,
+      y el resto agrupado por categoría.</span>
+    </h1>
+    <div class="meta">
+      <span><b>Reglas</b> · <span id="mUnicos">—</span> únicas</span>
+      <span><b>Origen</b> · feedback de Dana, abril a julio 2026</span>
+      <span><b>Contenido</b> · <span id="mVersion">—</span></span>
+    </div>
+  </header>
+
+  <div class="cards" id="cards"></div>
+
+  <section class="aside">
+    <h3>Cómo funciona</h3>
+    <p>Marcas los puntos a medida que los revisas. Lo que vas marcando <b>se guarda solo en tu
+    navegador</b>, así que puedes cerrar la pestaña y seguir después: no hay servidor ni base de datos
+    detrás.</p>
+    <p>Cuando termines, el botón <b>Copiar link del resultado</b> arma una URL que lleva la revisión
+    completa adentro — lo marcado, las notas y la ficha del proyecto. Se la mandas a Dana y ella lo
+    abre y lo ve tal cual quedó, sin instalar nada. También puedes exportarlo a CSV para Excel o
+    imprimirlo en PDF.</p>
+    <p>Si prefieres revisar en papel o en Excel, hay una plantilla en blanco con las seis pestañas.</p>
+    <p style="margin-top:16px">
+      <a class="btn primary" href="downloads/QA_Checklist_LATO.xlsx" download>Descargar plantilla en Excel</a>
+      <a class="btn" href="docs/QA_CHECKLIST_LATO.md">Ver el documento fuente</a>
+    </p>
+  </section>
+
+  <p class="foot">
+    Este checklist se construyó a partir de los 20 chats de proyecto exportados de Telegram
+    (abril–julio 2026), los 16 videos de revisión de Dana, sus 41 notas de voz transcritas, las
+    capturas anotadas que envió, la Knowledge Base del equipo, y la comparación entre la proposal
+    que generó el sistema para Baily y la versión que ella corrigió a mano. Las reglas transversales
+    viven en <code>data/transversales.json</code> y se inyectan en los cinco checklists.
+  </p>
+
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/state.js"></script>
+<script>
+(function () {
+  var D = window.QA_DATA;
+  document.getElementById('mUnicos').textContent = D.unicos;
+  document.getElementById('mVersion').textContent = D.contenido;
+
+  var cont = document.getElementById('cards');
+  D.documentos.forEach(function (doc) {
+    var r = QAState.resumen(doc.id, doc);
+    var a = document.createElement('a');
+    a.className = 'card';
+    a.href = 'checklist.html?doc=' + encodeURIComponent(doc.id);
+
+    var progreso = r.hechos > 0
+      ? '<span class="prog">' + r.hechos + ' / ' + r.total + ' revisados</span>'
+      : '<span>' + r.total + ' ítems</span>';
+
+    a.innerHTML =
+      '<div class="kicker">Checklist</div>' +
+      '<h2></h2>' +
+      '<p></p>' +
+      '<p class="cuando"></p>' +
+      '<div class="nums">' + progreso +
+        '<span class="crit">' + doc.criticos + ' críticos</span>' +
+        '<span>' + doc.transversales + ' transversales</span>' +
+      '</div>';
+
+    a.querySelector('h2').textContent = doc.titulo;
+    a.querySelector('p').textContent = doc.resumen;
+    a.querySelector('.cuando').textContent = doc.cuando;
+    cont.appendChild(a);
+  });
+})();
+</script>
+
+</body>
+</html>

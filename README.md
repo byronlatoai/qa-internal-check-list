@@ -66,8 +66,7 @@ No hay paso de build: lo que está en el repo es lo que se sirve.
 ├── downloads/
 │   └── QA_Checklist_LATO.xlsx  GENERADO — plantilla en blanco
 └── docs/
-    ├── QA_CHECKLIST_LATO.md    FUENTE — las reglas propias de cada documento
-    └── TRANSCRIPCIONES_audios_y_videos_Dana.md   Material de origen
+    └── QA_CHECKLIST_LATO.md    FUENTE — las reglas propias de cada documento
 ```
 
 ---
@@ -142,7 +141,7 @@ Las reglas salieron de revisar el material de trabajo real del equipo entre abri
 los 20 chats de proyecto exportados de Telegram, los 16 videos de revisión de Dana, sus 41 notas
 de voz (transcritas localmente con Whisper), las capturas anotadas que envió, la Knowledge Base
 del equipo, y la comparación entre la proposal que generó el sistema para Baily y la versión que
-ella corrigió a mano.
+ella corrigió a mano. Ese material de origen no se versiona en este repo.
 
 Cada ítem del checklist conserva de dónde salió, en la columna *Por qué / de dónde sale*.
 

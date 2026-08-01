@@ -17,3 +17,6 @@ desktop.ini
 # Temporales de Office
 ~$*.xlsx
 ~$*.docx
+
+# Material de origen, no se publica
+docs/TRANSCRIPCIONES_*.md

@@ -34,11 +34,12 @@ No hay servidor, no hay base de datos y no hay build del frontend.
 Abre `index.html`. Funciona igual con `file://` que publicado, así que puedes probarlo con doble
 clic antes de subirlo.
 
-### Publicado
+### Publicar en Vercel
 
-- **Producción:** https://lato-qa-checklist.vercel.app
-- Vercel está conectado a este repo: cada push a `main` redespliega solo. No hay paso de build,
-  la configuración está en `vercel.json`.
+1. https://vercel.com/new → importar este repo.
+2. Sin configuración: `vercel.json` ya define que es un sitio estático servido desde la raíz,
+   sin build ni install.
+3. Cada push a `main` redespliega solo.
 
 ### Alternativa: GitHub Pages
 

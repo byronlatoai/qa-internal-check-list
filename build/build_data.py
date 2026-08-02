@@ -21,8 +21,8 @@ TRJ  = os.path.join(ROOT, "data", "transversales.json")
 OUTJ = os.path.join(ROOT, "data", "checklist.json")
 OUTS = os.path.join(ROOT, "assets", "js", "data.js")
 
-VERSION = "1.0"
-CONTENIDO = "Checklist V1"
+VERSION = "2.0"
+CONTENIDO = "Checklist V2"
 
 DOCUMENTOS = [
     {

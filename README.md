@@ -6,7 +6,10 @@ technical scope documents, API research y business logic docs**.
 Es un sitio estático: se abre, se marca lo revisado y se comparte el resultado por link.
 No hay servidor, no hay base de datos y no hay build del frontend.
 
-**Contenido:** Checklist V1 — 151 reglas únicas, 44 críticas.
+**Contenido:** Checklist V2 — 60 reglas únicas, 22 críticas, máximo 20 por entregable.
+Solo se incluye lo que se puede verificar mirando el entregable. Los consejos de
+trabajo están en [docs/BUENAS_PRACTICAS.md](docs/BUENAS_PRACTICAS.md) y la lista
+completa sin filtrar en [docs/QA_CHECKLIST_LATO_V1.md](docs/QA_CHECKLIST_LATO_V1.md).
 
 ---
 
@@ -71,7 +74,9 @@ clic antes de subirlo.
 │   └── QA_Checklist_LATO.xlsx  GENERADO — plantilla en blanco
 ├── vercel.json                 Configuración del despliegue estático
 └── docs/
-    └── QA_CHECKLIST_LATO.md    FUENTE — las reglas propias de cada documento
+    ├── QA_CHECKLIST_LATO.md     FUENTE — las reglas propias de cada documento (V2)
+    ├── QA_CHECKLIST_LATO_V1.md  V1 archivada, 151 reglas con toda la trazabilidad
+    └── BUENAS_PRACTICAS.md      Lo que salió del checklist por ser consejo, no regla
 ```
 
 ---
